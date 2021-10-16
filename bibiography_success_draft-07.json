@@ -1,0 +1,40 @@
+{
+    "$schema": "./bibliography.json",
+    "type": ["object","array"],
+    "properties": {
+        "ISBN": {
+            "type": "string",
+            "pattern": "^[0-9]{13}$"
+        },
+        "author": {
+            "type": [
+                "array",
+                "string"
+            ]
+        },
+        "title": {
+            "type": "string"
+        },
+        "edition": {
+            "type": "number"
+        },
+        "publisher": {
+            "type": "string"
+        },
+        "year": {
+            "type": "integer"
+        },
+        "url": {
+            "type": "string",
+            "format": "uri"
+        }
+    },
+    "required": [
+        "ISBN",
+        "author",
+        "title",
+        "publisher",
+        "year"
+    ],
+    "additionalProperties": false
+}

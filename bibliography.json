@@ -1,0 +1,46 @@
+[
+    {
+        "ISBN": "978-1878424310",
+        "author": "Don Miguel Ruiz",
+        "title": "The four agreements",
+        "publisher": "Amber-Allen Publishing",
+        "year": 2015
+    },
+    {
+        "ISBN": "978-1408855652",
+        "author": "J.K.Rowling",
+        "title": "Harry Potter and the Philosopher's Stone",
+        "publisher": "Bloomsbury Children's Books",
+        "year": 2014,
+        "url": "https://harrypotter.fandom.com/wiki/Harry_Potter_and_the_Philosopher%27s_Stone"
+    },
+    {
+        "ISBN": "978-9353162344",
+        "author": "E Balagurusamy",
+        "title": "Programming with Java",
+        "edition": 6,
+        "publisher": "McGraw-Hil",
+        "year": 2019
+    },
+    {
+        "ISBN": "1517369053",
+        "author": "Dee Davis",
+        "title": "Midnight Rain",
+        "publisher": "Pocito Press",
+        "year": 2015
+    },
+    {
+        "ISBN": "0385539258",
+        "author": "Hanya Yanagihara",
+        "title": "A Little Life",
+        "publisher": "Doubleday",
+        "year": 2015
+    },
+    {
+        "ISBN": "9780241268025",
+        "author": "Hamish Hamilton",
+        "title": "The Man Who Saw Everything",
+        "publisher": "Bloomsbury",
+        "year": 2019
+    }
+]
