@@ -1,0 +1,197 @@
+............................CHESSBOARD.HTML..................................
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chessboard</title>
+    <link rel="stylesheet" href="chessboard.css">
+</head>
+<body>
+    <table class="chessboard">
+        <thead>
+            <tr>
+                <th></th>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+                <th>d</th>
+                <th>e</th>
+                <th>f</th>
+                <th>g</th>
+                <th>h</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>8</th>
+                <td>&#x265C</td>
+                <td>&#x265E</td>
+                <td>&#x265D</td>
+                <td>&#x265B</td>
+                <td>&#x265A</td>
+                <td>&#x265D</td>
+                <td>&#x265E</td>
+                <td>&#x265C</td>
+                <th>8</th>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td>&#x265F</td>
+                <td>&#x265F</td>
+                <td>&#x265F</td>
+                <td>&#x265F</td>
+                <td>&#x265F</td>
+                <td>&#x265F</td>
+                <td>&#x265F</td>
+                <td>&#x265F</td>
+                <th>7</th>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>6</th>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>5</th>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>4</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>3</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>&#x2659</td>
+                <td>&#x2659</td>
+                <td>&#x2659</td>
+                <td>&#x2659</td>
+                <td>&#x2659</td>
+                <td>&#x2659</td>
+                <td>&#x2659</td>
+                <td>&#x2659</td>
+                <th>2</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>&#x2656</td>
+                <td>&#x2658</td>
+                <td>&#x2657</td>
+                <td>&#x2655</td>
+                <td>&#x2654</td>
+                <td>&#x2657</td>
+                <td>&#x2658</td>
+                <td>&#x2656</td>
+                <th>1</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+                <th>d</th>
+                <th>e</th>
+                <th>f</th>
+                <th>g</th>
+                <th>h</th>
+                <th></th>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
+
+//table.chessboard>thead>tr>th*10^^tbody>tr*8>th{$@-}+td*8+th{$@-}^^tfoot>tr>th*10   use this code to create the table 
+
+
+
+
+...............................CHESSBOARD.CSS..............................
+
+table.chessboard {
+    border-collapse: collapse;
+    
+}
+
+table.chessboard :is(td,th) {
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.chessboard th{
+    font-weight: normal;
+}
+
+table.chessboard > tbody > tr:first-child{
+    border-top: medium solid black;
+}
+
+table.chessboard > tbody > tr:last-child{
+    border-bottom: medium solid black;
+}
+
+table.chessboard > tbody > tr > td:first-of-type{
+    border-left: medium solid black;
+}
+
+table.chessboard > tbody > tr > td:last-of-type{
+    border-right: medium solid black;
+}
+
+table.chessboard > tbody > tr:nth-child(odd) > td:nth-last-of-type(even){
+    background-color: lightgray;
+}
+
+table.chessboard > tbody > tr:nth-child(odd) > td:nth-last-of-type(odd){
+    background-color: aliceblue;
+}
+
+table.chessboard > tbody > tr:nth-child(even) > td:nth-last-of-type(odd){
+    background-color: lightgray;
+}
+
+table.chessboard > tbody > tr:nth-child(even) > td:nth-last-of-type(even){
+    background-color: aliceblue;
+}
+
